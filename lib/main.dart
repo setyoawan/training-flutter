@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:training/about.dart';
-import 'package:training/portfolio.dart';
+// import 'package:training/meet1/about.dart';
+// import 'package:training/meet1/portfolio.dart';
+import 'package:training/meet2/listview.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -11,11 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter App',
-      theme: ThemeData(        
+      theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Home(),
-      
     );
   }
 }
@@ -38,13 +39,15 @@ class Home extends StatelessWidget {
             ),
             Text(
               "Setyo Awan Prakoso",
-              style: TextStyle(
-                fontWeight: FontWeight.bold
-              ),
-            )            
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset("assets/confirmed.png"),
           ],
         ),
-      ),       
+      ),
     );
   }
 }

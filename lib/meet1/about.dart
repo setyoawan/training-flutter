@@ -18,8 +18,8 @@ class About extends StatelessWidget {
           onLongPress: (){
             print("button di klik panjang");
           },
-        ),
-        color: Colors.amberAccent,              
+          color: Colors.amberAccent, 
+        ),                     
       ),
     );
   }
